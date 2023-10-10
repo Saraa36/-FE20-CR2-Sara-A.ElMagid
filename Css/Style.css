@@ -32,3 +32,13 @@ footer {
   text-align: center;
   padding-top: 30px;
 }
+
+.card {
+  margin: 10px;
+  padding-top: 20px;
+}
+#btn {
+  background-color: rgba(99, 163, 184, 0.267);
+  color: rgb(59, 77, 151);
+  padding: 20px;
+}

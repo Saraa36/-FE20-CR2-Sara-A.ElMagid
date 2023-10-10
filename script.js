@@ -32,10 +32,15 @@ let btn1 = document.querySelectorAll('.myNo');
 
 btn1.forEach(imp =>{
     imp.addEventListener ("mousedown",() =>{
-        imp.style.backgroundColor = 'red'
+        imp.style.backgroundColor = 'green';
+
+       
     })
 
+   
 })
+
+
 btn1.forEach ((imp, i) => {
     imp.addEventListener('click', function(){
         incLikes(i);
@@ -49,7 +54,7 @@ function incLikes (i){
     
 }
 document.getElementById('btn').addEventListener ('click', function()
-    { let newVar = newArr.sort((a, b) => b.likes - a.likes);
+    { let newVar = newArr.sort((a, b) => a.importance - b.importance);
 
         console.log(newVar);
 
@@ -57,7 +62,14 @@ document.getElementById('btn').addEventListener ('click', function()
     }
 )
 
+// let imp = document.querySelectorAll ('.myNo')
+
+// if (imp <2){ document.querySelectorAll('.myNo'),
+// imp
+// }
 
 
 
-     
+
+
+
